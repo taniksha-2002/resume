@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <style>
+
+
+        * {
+            box-sizing: border-box;
+
+        }
+        body {
+          display: flex;
+          justify-content: center;
+          padding: 10px;
+          background-color: black;
+          font-family: 'Source Sans Pro', sans-serif;
+        }
+
+
+                                             /* header start */
+        @media only screen and (max-width: 600px) {
+          body {
+            padding: 60px 10px;
+          }
+        }
+
+        @media only screen and (min-width: 600px){
+            body {
+            padding: 60px 10px;
+          }
+        }
+
+        @media only screen and (min-width: 768px){
+            body {
+            padding: 60px 10px;
+          }
+        }
+
+        @media only screen and (min-width: 1200px){
+            body {
+            padding: 60px 10px;
+          }
+        }
+
+        .tabs {
+          display: flex;
+          flex-wrap: wrap;
+          background: black;
+          box-shadow: 0 48px 80px -32px rgba(0,0,0,0.3);
+          margin-top:-58px;
+          margin-bottom:0px;
+          width: 10000%;
+        }
+        @media only screen and(min-width: 400px;){
+            .tabs{
+                display: flex;
+                flex-wrap: wrap;
+                marginn-top:0px;}}
+        .input {
+          opacity: 0;
+        }
+
+
+        .label {
+          width: 100%;
+          padding: 20px 30px;
+          background: black;
+          cursor: pointer;
+          font-weight: bold;
+          font-size: 18px;
+          color: white;
+          transition: background 0.1s, color 0.1s;
+
+        }
+        .label:hover {
+          background: #C3C1C4;
+        }
+        .label:active {
+          background: #bc8cf2;
+        }
+        .input:focus + .label {
+          z-index: 1;
+        }
+        .input:checked + .label {
+          background: #bc8cf2;
+          color: #000;
+        }
+        @media (min-width: 600px) {
+          .label {
+            width: 15%;
+          }
+        }
+        .panel {
+          display: none;
+          padding: 5px 5px 2px;
+          background: black;
+        }
+        @media (min-width: 600px) {
+          .panel {
+            order: 99;
+          }
+        }
+        .input:checked + .label + .panel {
+          display: block;
+        }
+        .mainbody{
+           background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdTRnQqoy8XburHvphQ7wgXwkmyxQHjOJwlciKYjIcrqOjpcJD3tBlGCVk4hAitlcVVI0&usqp=CAU);
+           background-repeat: no-repeat;
+           background-size: auto;
+           background-position:top;
+           height: 125%;
+       }
+       .main{
+           min-height:70vh;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+
+           overflow: hidden;
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-family: arial;
+           }
+
+       .contain{
+           width: 345px;
+           overflow: hidden;
+           margin-top: -60px;
+           }
+       .contain .text{
+           position: relative;
+           color: #bc8cf2;
+           font-size: 30px;
+           font-weight: 600;
+           text-decoration: underline;
+           }
+       .contain .text.first-text{
+           color: white;
+            text-decoration: none;
+            margin-left: 45px;
+           }
+       .text.sec-text:before{
+               content: "";
+               position: absolute;
+               top: 0;
+               left: 0;
+               height: 100%;
+               width: 100%;
+               background-color: black;
+               border-left: 2px solid #bc8cf2;
+               animation: animate 4s steps(12) infinite;}
+
+       @keyframes animate{
+           40%, 60%{
+               left: calc(100% + 4px); }
+           100%{
+               left: 0%; }
+               }
+
+       .banner_btn {
+               background: transparent;
+               border: 2px solid #bc8cf2;
+               text-decoration: none;
+               padding: 8px 30px;
+               display: inline-block;
+               margin-top: 30px;
+               color: #fff;
+               text-transform: capitalize;
+               -webkit-transition: all 0.3s ease-in-out;
+               transition: all 0.3s ease-in-out 0s;
+               border-radius: 50px;
+               margin-left: 594px;
+
+           }
+           .banner_btn:hover{
+               background-color: #bc8cf2;}
+
+        @media only screen and(min-width:600px;){
+            .banner-btn{
+                margin-left:10px;}}
+    </style>
+</head>
+<body>
+<div class="tabs">
+<input class="input" name="tabs" type="radio" id="tab-1" checked="checked"/>
+<label class="label" for="tab-1" style="text-align:center;">Home</label>
+
+
+<div class="panel"  style="width:500%;">
+    <div class="mainbody">
+        <div class="main" >
+            <div class=" contain">
+                <h1 style="color: grey; font-weight:600; margin-left:118px;">hi there!</h1>
+                <h1 style="color:white; text-align: center;"> I am Taniksha Kamble</h1>
+                <span class="text first-text">A</span>
+                <span class="text sec-text"></span>
+            </div>
+    `    </div>
+        <h4 style="color: grey;text-align: center; margin-top: -143px; margin-left: 24px;">
+            A creative web developer offering 2+ years of experience with 50+ happy clients!</h4><br>
+
+        <div class="btn">
+            <a href="about.html" class="banner_btn">About Me</a></div>
+
+
+        <div class="btn">
+            <a href="contact.html" class="banner_btn" > Hire Me!</a></div>
+
+
+
+        <script>
+            const text = document.querySelector(".sec-text");
+                const textLoad = () => {
+                    setTimeout(() => {
+                        text.textContent = "Web Developer";
+                        }, 0);
+                    setTimeout(() => {
+                        text.textContent = "Web Designer";
+                        }, 4000);
+                    }
+                    textLoad();
+                    setInterval(textLoad, 8000);
+        </script>
+    </div>
+</div>
+
+    <input class="input" name="tabs" type="radio" id="tab-2"/>
+    <label class="label" for="tab-2" style="text-align:center;">About Me</label>
+
+    <input class="input" name="tabs" type="radio" id="tab-3"/>
+    <label class="label" for="tab-3" style="text-align:center;">Education</label>
+
+    <input class="input" name="tabs" type="radio" id="tab-4"/>
+    <label class="label" for="tab-4" style="text-align:center;">Skills</label>
+
+    <input class="input" name="tabs" type="radio" id="tab-5"/>
+    <label class="label" for="tab-5" style="text-align:center;">Achievements</label>
+
+    <input class="input" name="tabs" type="radio" id="tab-6"/>
+    <label class="label" for="tab-6" style="text-align:center;">Contact</label>
+
+</div>
+</body>
+</html>
