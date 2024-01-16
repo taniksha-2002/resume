@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.resume.ResumeApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-12T10:32:09" hostname="MGSWLP148" time="1.518">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.resume.ResumeApplicationTests" time="1.518"/>
+  <system-out><![CDATA[16:02:06.527 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.resume.ResumeApplicationTests]: ResumeApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:02:06.678 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.resume.ResumeApplication for test class com.example.resume.ResumeApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2024-01-12T16:02:07.258+05:30  INFO 1872 --- [    Test worker] c.example.resume.ResumeApplicationTests  : Starting ResumeApplicationTests using Java 17 with PID 1872 (started by MGSUser in C:\Users\MGSUser\Downloads\resume\resume)
+2024-01-12T16:02:07.260+05:30  INFO 1872 --- [    Test worker] c.example.resume.ResumeApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2024-01-12T16:02:08.729+05:30  INFO 1872 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-01-12T16:02:09.191+05:30  INFO 1872 --- [    Test worker] c.example.resume.ResumeApplicationTests  : Started ResumeApplicationTests in 2.24 seconds (process running for 4.194)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
